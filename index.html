@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rangaiah Gunta Updates - Analytics</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #10101c;
+    color: white;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #191929;
+    position: fixed;
+    padding: 25px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ff4b91;
+    margin-bottom: 40px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 17px 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #bbb;
+}
+
+.menu li:hover {
+    background: #30304a;
+    color: white;
+}
+
+.main {
+    margin-left: 240px;
+    padding: 35px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 27px;
+}
+
+.profile {
+    background: #292941;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #202035;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.card h3 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.card h2 {
+    margin-top: 15px;
+    font-size: 28px;
+    color: #ff4b91;
+}
+
+.panel {
+    background: #202035;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.panel h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 17px;
+    text-align: left;
+    border-bottom: 1px solid #39394f;
+}
+
+th {
+    color: #ff4b91;
+}
+
+.status {
+    color: #00df9a;
+}
+
+.note {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+@media(max-width:900px) {
+    .sidebar {
+        width: 170px;
+    }
+
+    .main {
+        margin-left: 170px;
+        padding: 15px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+📸 RGU ANALYTICS
+</div>
+
+<ul class="menu">
+<li>🏠 Dashboard</li>
+<li>📊 Instagram Insights</li>
+<li>🎬 Reels Analytics</li>
+<li>👥 Followers</li>
+<li>❤️ Engagement</li>
+<li>🎵 Songs Analytics</li>
+<li>⏰ Best Posting Time</li>
+<li>⚙️ Settings</li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<h1>Dashboard Overview</h1>
+
+<div class="profile">
+Rangaiah Gunta Updates
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>👁 TOTAL VIEWS</h3>
+<h2 id="views">125.8K</h2>
+</div>
+
+<div class="card">
+<h3>👥 FOLLOWERS</h3>
+<h2 id="followers">10.2K</h2>
+</div>
+
+<div class="card">
+<h3>❤️ TOTAL LIKES</h3>
+<h2>8.5K</h2>
+</div>
+
+<div class="card">
+<h3>🔄 SHARES</h3>
+<h2>2.4K</h2>
+</div>
+
+</div>
+
+<div class="panel">
+
+<h2>📈 Instagram Growth</h2>
+
+<p>Monitor your Instagram page performance.</p>
+
+<br>
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>Performance</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Reels Views</td>
+<td>125.8K</td>
+<td class="status">Good</td>
+</tr>
+
+<tr>
+<td>Followers</td>
+<td>10.2K</td>
+<td class="status">Growing</td>
+</tr>
+
+<tr>
+<td>Engagement</td>
+<td>8.5K Likes</td>
+<td class="status">Active</td>
+</tr>
+
+</table>
+
+<p class="note">
+Demo data only – Replace with actual Instagram insights.
+</p>
+
+</div>
+
+<div class="panel">
+
+<h2>🎬 Top Reels Performance</h2>
+
+<table>
+
+<tr>
+<th>Reel</th>
+<th>Views</th>
+<th>Likes</th>
+</tr>
+
+<tr>
+<td>Hanuman Song</td>
+<td>25,000</td>
+<td>2,500</td>
+</tr>
+
+<tr>
+<td>Village Song</td>
+<td>18,000</td>
+<td>1,800</td>
+</tr>
+
+<tr>
+<td>Venkateswara Song</td>
+<td>12,000</td>
+<td>1,200</td>
+</tr>
+
+</table>
+
+<p class="note">
+Sample values – Not connected to Instagram yet.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
