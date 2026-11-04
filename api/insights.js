@@ -21,9 +21,7 @@ const permissionResponse = await fetch(
   `https://graph.facebook.com/v23.0/me/permissions?access_token=${encodeURIComponent(token)}`
 );
 const permissionData = await permissionResponse.json();
-return res.status(200).json({
-  permissions: permissionData
-});
+
     const url = new URL(
       "https://graph.facebook.com/v23.0/me/accounts"
     );
