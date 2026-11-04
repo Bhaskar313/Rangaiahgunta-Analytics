@@ -8,14 +8,18 @@ module.exports = async (req, res) => {
     }
 
     const cookies = Object.fromEntries(
-      (req.headers.cookie || "")
-        .split("; ")
-        .filter(Boolean)
-        .map(c => {
-          const i = c.indexOf("=");
-          return [c.slice(0, i), c.slice(i + 1)];
-        })
-    );
+  (req.headers.cookie || "")
+    .split(";")
+    .map(c => c.trim())
+    .filter(Boolean)
+    .map(c => {
+      const i = c.indexOf("=");
+      return [
+        c.slice(0, i).trim(),
+        decodeURIComponent(c.slice(i + 1).trim())
+      ];
+    })
+);
 
     if (!state || state !== cookies.ig_oauth_state) {
       return res.status(403).send("Invalid OAuth state");
