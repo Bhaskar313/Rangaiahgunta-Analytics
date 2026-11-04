@@ -17,6 +17,7 @@ module.exports = (req, res) => {
   const redirectUri = `https://${req.headers.host}/api/callback`;
 
   const params = new URLSearchParams({
+    auth_type: "rerequest",
     client_id: appId,
     redirect_uri: redirectUri,
     response_type: "code",
